@@ -1,0 +1,106 @@
+.horizontalcssmenu{
+	width: 100%;
+	height: 100%;
+	align-items:center;
+	position:relative;
+	
+}
+
+.horizontalcssmenu ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.horizontalcssmenu li{
+	padding: 0px;
+}
+
+/*Top level list items*/
+.horizontalcssmenu ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+/*Top level menu link items style*/
+.horizontalcssmenu ul li a{
+	display: block;
+	width: 300; /*Width of top level menu link items*/
+	/* width: 125px; /*Width of top level menu link items*/
+	height:80;
+	padding:inherit;
+	border: 1px solid #a7d4ff;
+	border-left-width: 0;
+	text-decoration: none;
+	background: #a7d4ff;
+	color: black;
+	font: italic bold 16px Arial
+	/*filter: alpha(opacity=80);
+	opacity: 0.8;*/
+}
+	
+/*Sub level menu*/
+.horizontalcssmenu ul li ul{
+	left: 0;
+	top: 0;
+	border-top: 1px solid #a7d4ff;
+	position: absolute;
+	display: block;
+	visibility: hidden;
+	z-index: 100;
+}
+
+/*Sub level menu list items*/
+.horizontalcssmenu ul li ul li{
+	display: inline;
+	float: none;
+}
+
+
+/* Sub level menu links style */
+.horizontalcssmenu ul li ul li a{
+	width: 160px; /*width of sub menu levels*/
+	font-weight: bold;
+	font-size:medium;
+	padding: 2px 5px;
+	background: #a7d4ff; /*#e3f1bd*/
+	border-width: 0 1px 1px 1px;
+}
+
+.horizontalcssmenu ul li a:hover{
+	background: #a7d4ff;
+}
+
+.horizontalcssmenu ul li ul li a:hover{
+	background: #a7d4ff; /*#cde686*/
+}
+
+.horizontalcssmenu .arrowdiv{
+	display: inline;
+	position: absolute;
+	right: 0;
+	background: transparent url(../img/menuarrow.gif) no-repeat center left;
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows menu, add 1em top spacing between the two in IE*/
+	padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .horizontalcssmenu ul li { float: left; height: 1%; }
+* html .horizontalcssmenu ul li a { height: 1%; }
+.Oculto
+{
+position:absolute; 
+width:135px; 
+border:#000000 1px solid;
+/width:160px; 
+height:19px;
+/*height:100%;*/
+vertical-align:super; 
+filter: alpha(opacity=0);
+opacity: 0;
+left:-1px;
+}
+/* End */

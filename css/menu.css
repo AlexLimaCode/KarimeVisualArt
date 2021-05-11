@@ -1,0 +1,11 @@
+/* NAVEGACION */
+.nav-main{
+	font-size: 17px;
+	display: flex;	/* ORGANIZAR ELEMENTOS */
+	justify-content: space-between;	/* UTILIZAR ANCHO DISPONIBLE */
+	align-items: center;
+	height: 100px;
+	padding: 20px;
+	background: #FEF8FB;
+	
+}
